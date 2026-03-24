@@ -1,126 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ekta Shirsulla | Data Scientist</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ekta Shirsulla | Data Analyst Portfolio</title>
 
-    <!-- Modern Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <style>
+<style>
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            background-color: #f8fafc;
-            color: #1e293b;
-        }
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #0f172a;
+    color: #e2e8f0;
+}
 
-        header {
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            color: white;
-            padding: 120px 20px;
-            text-align: center;
-        }
+/* HERO */
+header {
+    text-align: center;
+    padding: 120px 20px;
+}
 
-        header h1 {
-            font-size: 52px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
 
-        header h2 {
-            font-weight: 400;
-            font-size: 22px;
-            margin-top: 10px;
-        }
+header h2 {
+    font-weight: 400;
+    color: #94a3b8;
+}
 
-        header p {
-            max-width: 650px;
-            margin: 25px auto;
-            font-size: 16px;
-            line-height: 1.6;
-        }
+header p {
+    max-width: 600px;
+    margin: 20px auto;
+    color: #cbd5f5;
+}
 
-        .btn {
-            background: #2563eb;
-            color: white;
-            padding: 12px 28px;
-            border-radius: 30px;
-            font-weight: 500;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 15px;
-            transition: 0.3s ease;
-        }
+.btn {
+    background: #3b82f6;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    display: inline-block;
+}
 
-        .btn:hover {
-            background: #1d4ed8;
-        }
+.btn:hover {
+    background: #2563eb;
+}
 
-        section {
-            padding: 70px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
+/* SECTION */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
 
-        h2 {
-            font-size: 30px;
-            font-weight: 600;
-            margin-bottom: 30px;
-            color: white;
-        }
+h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
 
-        .project {
-            background: white;
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0px 8px 20px rgba(0,0,0,0.05);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
+/* PROJECT CARD */
+.project {
+    background: #1e293b;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
 
-        .project:hover {
-            transform: translateY(-6px);
-            box-shadow: 0px 12px 25px rgba(0,0,0,0.08);
-        }
+.project:hover {
+    transform: translateY(-5px);
+}
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
+.project h3 {
+    margin-bottom: 10px;
+}
 
-        .skill-box {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 5px 15px rgba(0,0,0,0.04);
-        }
+.project a {
+    color: #3b82f6;
+    text-decoration: none;
+}
 
-        .contact a {
-            display: inline-block;
-            margin-right: 15px;
-            color: #2563eb;
-            font-weight: 500;
-            text-decoration: none;
-        }
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #0f172a;
-            color: white;
-        }
+.skill {
+    background: #1e293b;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
 
-        @media (max-width: 768px) {
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #94a3b8;
+}
 
-    </style>
+</style>
 </head>
 
 <body>
@@ -128,111 +115,79 @@
 <header>
     <h1>Ekta Shirsulla</h1>
     <h2>Data Analyst | Data Scientist | Power BI • SQL • Python</h2>
+
     <p>
-        Turning raw data into actionable insights through dashboards, analytics, and predictive modeling.
+        I transform raw data into actionable insights using dashboards, analytics, and machine learning.
+        Passionate about solving business problems through data-driven decision making.
     </p>
-    <p>
-        Building predictive models and analytical solutions that transform complex data into strategic business insights and measurable impact.
-    </p>
-    <a href="resume.pdf" download class="btn">Download Resume</a>
+
+    <a href="YOUR_RESUME_LINK" target="_blank" class="btn">View Resume</a>
+    <a href="https://github.com/ektashirsulla26-source" target="_blank" class="btn">GitHub</a>
 </header>
 
 <section>
     <h2>About Me</h2>
     <p>
-       I am an M.Sc. Statistics graduate specializing in data analytics and visualization. 
-       I build dashboards, perform data wrangling, and develop predictive models to solve real-world business problems.
-
-       With hands-on experience in Power BI, SQL, and Python, I focus on transforming complex datasets into actionable insights 
-       that support data-driven decision-making.
-
-       I am actively seeking Data Analyst and Data Scientist roles where I can contribute to business impact through data.
-</p>
-</section>
-    
-<section>
-    <h2>Key Skills</h2>
-    <p>
-    Power BI • Tableau • SQL • Python • Excel • Data Cleaning • ETL • Dashboard Development • KPI Reporting • Machine Learning
+        M.Sc. Statistics graduate with hands-on experience in data analytics, ETL, and dashboard development.
+        Skilled in Power BI, SQL, and Python, I build solutions that convert complex data into meaningful business insights.
+        Currently seeking Data Analyst / Data Scientist roles.
     </p>
-</section>    
+</section>
+
 <section>
     <h2>Projects</h2>
 
     <div class="project">
         <h3>Telecom Customer Churn Prediction</h3>
         <p>
-        Built a machine learning model on 7K+ customer records to predict churn. 
-        Applied SMOTE to handle class imbalance and improved recall to 77%. 
-        Delivered actionable insights for customer retention strategies.
+        Built ML models on 7K+ records. Improved churn prediction recall to 77% using SMOTE.
+        Provided actionable insights for customer retention strategies.
         </p>
-        <a href="https://github.com/your-link" target="_blank">View Project</a>
+        <a href="YOUR_GITHUB_LINK">View Project →</a>
     </div>
 
     <div class="project">
         <h3>AI Job Market Analytics Dashboard</h3>
         <p>
-        Developed Power BI dashboards analyzing global job trends, salary drivers, and skill demand. 
-        Identified Python & SQL as top skills and experience as key salary driver.
+        Developed Power BI dashboards analyzing salary trends and skill demand.
+        Identified key drivers like experience and company size.
         </p>
-        <a href="https://github.com/your-link" target="_blank">View Dashboard</a>
+        <a href="YOUR_GITHUB_LINK">View Dashboard →</a>
     </div>
 
     <div class="project">
         <h3>Retail Sales Performance Dashboard</h3>
         <p>
-        Built KPI dashboards to track sales, profit, and regional trends. 
-        Provided data-driven recommendations to improve business profitability.
+        Built KPI dashboards to track sales and profitability.
+        Delivered insights to improve business decision-making.
         </p>
-        <a href="https://github.com/your-link" target="_blank">View Project</a>
+        <a href="YOUR_GITHUB_LINK">View Project →</a>
     </div>
 
 </section>
 
 <section>
     <h2>Skills</h2>
-
-    <div class="skills-grid">
-
-        <div class="skill-box">
-            <strong>Programming & Query Languages</strong>
-            <p>Python • SQL</p>
-        </div>
-
-        <div class="skill-box">
-            <strong>Data Analysis & Visualization</strong>
-            <p>Pandas • NumPy • Matplotlib • Seaborn • Power BI</p>
-        </div>
-
-        <div class="skill-box">
-            <strong>Machine Learning</strong>
-            <p>Scikit-learn • Feature Engineering • Model Evaluation • Classification & Regression</p>
-        </div>
-
-        <div class="skill-box">
-            <strong>Advanced Concepts</strong>
-            <p>Recommendation Systems (SVD) • Customer Churn Modeling • EDA</p>
-        </div>
-
-        <div class="skill-box">
-            <strong>Tools & Deployment</strong>
-            <p>Git • GitHub • Jupyter Notebook • Streamlit</p>
-        </div>
-
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Power BI</div>
+        <div class="skill">Tableau</div>
+        <div class="skill">Excel</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Data Cleaning</div>
+        <div class="skill">ETL</div>
     </div>
-
 </section>
 
-<section class="contact">
+<section>
     <h2>Contact</h2>
-    <p><strong>Location:</strong> Mumbai, India</p>
     <p>Email: ektashirsulla26@gmail.com</p>
-    <a href="https://www.linkedin.com/in/ekta-shirsulla/" target="_blank">LinkedIn</a>
-    <a href="https://github.com/ektashirsulla26-source" target="_blank">GitHub</a>
+    <p>Location: Mumbai, India</p>
 </section>
 
 <footer>
-    © 2026 Ekta Shirsulla | Data Science Portfolio
+    © 2026 Ekta Shirsulla
 </footer>
 
 </body>
