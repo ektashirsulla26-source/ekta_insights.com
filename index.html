@@ -4,94 +4,238 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ekta Shirsulla | Data Analyst</title>
-<link rel="stylesheet" href="style.css">
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background:#ffffff;
+    color:#111;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:25px 8%;
+    position:sticky;
+    top:0;
+    background:#fff;
+}
+
+nav a{
+    text-decoration:none;
+    color:#111;
+    margin-left:25px;
+    font-weight:500;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:0 8%;
+}
+
+.hero h1{
+    font-size:55px;
+    font-weight:700;
+}
+
+.hero span{
+    color:#2563eb;
+}
+
+.hero p{
+    margin-top:20px;
+    max-width:600px;
+    line-height:1.6;
+    color:#555;
+}
+
+/* SECTION */
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+/* SKILLS GRID */
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    border:1px solid #eee;
+    padding:20px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* PROJECTS */
+.project{
+    border:1px solid #eee;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:scale(1.02);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #eee;
+    margin-top:50px;
+}
+</style>
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar">
-    <h2>Ekta</h2>
-    <ul>
-        <li><a href="#summary">Summary</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-    </ul>
+<nav>
+    <h3>Ekta</h3>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Hi, I'm Ekta 👋</h1>
-        <h2 class="typing"></h2>
-        <p>Turning data into business decisions & real-world impact.</p>
-        <div class="buttons">
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="#" class="btn-outline">Resume</a>
-        </div>
-    </div>
-</section>
+<div class="hero">
+    <h1>Hi, I'm <span>Ekta Shirsulla</span></h1>
+    <p>
+    M.Sc. Statistics graduate with expertise in data analysis, machine learning, and dashboard development. 
+    Skilled in Python, SQL, and Power BI to transform complex data into actionable insights.
+    </p>
+</div>
 
 <!-- SUMMARY -->
-<section id="summary" class="section fade-in">
-    <h2>Summary</h2>
+<section id="about">
+    <h2 class="section-title">Summary</h2>
     <p>
-       M.Sc. Statistics graduate with expertise in data analysis, machine learning, and MIS reporting.
-       Skilled in building dashboards, performing exploratory data analysis, and developing predictive models 
-       using Python, SQL, and Power BI. Proven ability to translate complex data into actionable insights and 
-       support data-driven decision-making across business functions.
+    Strong background in statistical modeling, regression analysis, clustering, and real-world business problem solving.
+    Experienced in building end-to-end data projects including predictive modeling and decision support systems.
     </p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="section fade-in">
-    <h2>Technical Skills</h2>
+<section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
 
     <div class="grid">
-        <div class="card">💾 SQL, Excel, Azure, GCP</div>
-        <div class="card">🤖 Scikit-Learn, Machine Learning, Python, R, Deep Learning</div>
-        <div class="card">📊 Pandas, Matplotlib, Plotly, Power BI, Tableau</div>
-        <div class="card">⚙️ Git, VS Code, Streamlit</div>
-        <div class="card">📈 Business Intelligence</div>
-    </div>
-</section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="section fade-in">
-    <h2>Experience</h2>
-
-    <div class="timeline">
-        <div class="timeline-item">
-            <h3>Data Analyst Intern – Cognifyz</h3>
-            <p>Built dashboards, performed EDA, delivered insights</p>
+        <div class="card">
+            <h4>Databases & ETL</h4>
+            <p>SQL, Excel, Azure, GCP</p>
         </div>
 
-        <div class="timeline-item">
-            <h3>Data Analyst Trainee – DES Mumbai</h3>
-            <p>Validated datasets, created MIS reports</p>
+        <div class="card">
+            <h4>Machine Learning & AI</h4>
+            <p>Python, R, Scikit-Learn, Deep Learning</p>
         </div>
+
+        <div class="card">
+            <h4>Data Analysis</h4>
+            <p>Pandas, Power BI, Tableau, Matplotlib</p>
+        </div>
+
+        <div class="card">
+            <h4>Deployment</h4>
+            <p>Git, Streamlit, VS Code</p>
+        </div>
+
+        <div class="card">
+            <h4>Business Intelligence</h4>
+            <p>KPI Dashboards, Decision Making, Project Management</p>
+        </div>
+
     </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section fade-in">
-    <h2>Projects</h2>
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
 
-    <div class="project-card">
-        <h3>Street Vendors Analysis</h3>
-        <p>Regression + Clustering + Poisson Models</p>
+    <div class="project">
+        <h3>Street Vendors Analysis (Mumbai)</h3>
+        <p>
+        Statistical study analyzing socio-economic factors, migration patterns, and business sustainability using 
+        Regression, Clustering, and Poisson models.
+        </p>
+        <p><strong>Tech:</strong> Python, R, SQL</p>
     </div>
 
-    <div class="project-card">
-        <h3>Churn Prediction</h3>
-        <p>ML model with Streamlit deployment</p>
+    <div class="project">
+        <h3>Telecom Customer Churn Prediction</h3>
+        <p>
+        Machine learning model to identify high-risk customers and improve retention strategies.
+        </p>
+        <p><strong>Tech:</strong> Python, ML Models</p>
     </div>
+
 </section>
 
-<script src="script.js"></script>
+<!-- EXPERIENCE -->
+<section>
+    <h2 class="section-title">Work Experience</h2>
+    <p>Add your internship / experience here</p>
+</section>
+
+<!-- EDUCATION -->
+<section>
+    <h2 class="section-title">Education</h2>
+    <p>M.Sc. Statistics</p>
+</section>
+
+<!-- CERTIFICATES -->
+<section>
+    <h2 class="section-title">Certifications</h2>
+    <p>Add certifications here</p>
+</section>
+
+<!-- LANGUAGES -->
+<section>
+    <h2 class="section-title">Languages</h2>
+    <p>English, Hindi, Marathi</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: your-email@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+</section>
+
+<footer>
+    © 2026 Ekta Shirsulla
+</footer>
+
 </body>
 </html>
